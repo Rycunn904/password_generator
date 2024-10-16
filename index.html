@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P@ssw0rd Gen3rator</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>Password Generator</h1>
+    <form id="ins">
+        Length: <input type="number" id="len">
+        <br>
+        <br>
+        Password Preferance:
+        <br>
+        Numbers: <input type="checkbox" id="ex_num">
+        <br>
+        Lowercase: <input type="checkbox" id="ex_low">
+        <br>
+        Uppercase: <input type="checkbox" id="ex_up">
+        <br>
+        Special Characters: <input type="checkbox" id="ex_spec">
+        <br><br>
+        <button onclick="">Submit</button>
+    </form>
+    <textarea id="out" placeholder="Output" readonly rows="5" cols="15"></textarea>
+    <script src="index.js"></script>
+</body>
+</html>
