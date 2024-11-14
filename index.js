@@ -1,5 +1,5 @@
 function generate() {
-    const lengt = document.getElementById("len").value;
+    const lengt = Number(document.getElementById("len").value);
     const numbers = document.getElementById("ex_num");
     const lowercase = document.getElementById("ex_low");
     const uppercase = document.getElementById("ex_up");
@@ -14,8 +14,7 @@ function generate() {
     let outstr = "";
 
     let canUse = "";
-
-    if (lengt.length <= 8 && lengt.length >= 150) {
+    if (lengt < 8 || lengt > 150) {
         alert("Length must be between 8-150!");
     } else if (!numbers.checked && !lowercase.checked && !uppercase.checked && !special.checked) {
         alert("Maust have at least 1 box checked!")
