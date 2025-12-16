@@ -14,8 +14,8 @@ function generate() {
     let outstr = "";
 
     let canUse = "";
-    if (lengt < 8 || lengt > 150) {
-        alert("Length must be between 8-150!");
+    if (lengt < 8 || lengt > 999999999999999) {
+        alert("Length must be between 8-999999999999999!");
     } else if (!numbers.checked && !lowercase.checked && !uppercase.checked && !special.checked) {
         alert("Maust have at least 1 box checked!")
     } else {
